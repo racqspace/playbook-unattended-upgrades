@@ -1,0 +1,4 @@
+---
+roles:
+  - name: racqspace.unattended_upgrades
+...
