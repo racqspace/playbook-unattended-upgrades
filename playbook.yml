@@ -5,5 +5,5 @@
   tags:
     - unattended-upgrages
   roles:
-    - role: racqspace.unattended_upgrages
+    - role: racqspace.unattended_upgrades
 ...
