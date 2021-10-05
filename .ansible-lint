@@ -18,10 +18,9 @@ quiet: true
 #   # note the foo.bar is invalid as being neither a module or a collection
 #   - fake_namespace.fake_collection.fake_module
 #   - fake_namespace.fake_collection.fake_module.fake_submodule
-# mock_roles:
-#   - mocked_role
-#   - author.role_name  # old standalone galaxy role
-#   - fake_namespace.fake_collection.fake_role  # role within a collection
+
+mock_roles:
+  - racqspace.unattended_upgrades
 
 # Enable checking of loop variable prefixes in roles
 # loop_var_prefix: "k8s_"
