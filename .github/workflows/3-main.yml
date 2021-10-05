@@ -83,7 +83,7 @@ jobs:
         env:
           PY_COLORS: 1
           ANSIBLE_FORCE_COLOR: 1
-  
+
   notify:
     name: Slack Notifications
     runs-on: ubuntu-latest
