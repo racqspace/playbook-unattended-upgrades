@@ -80,7 +80,7 @@ jobs:
 
       - name: Run Playbook
         run: >-
-          ansible-playbook -i hosts playbook.yml 
+          ansible-playbook -i hosts playbook.yml
         env:
           PY_COLORS: 1
           ANSIBLE_FORCE_COLOR: 1
