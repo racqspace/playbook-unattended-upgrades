@@ -72,14 +72,15 @@ jobs:
         with:
           python-version: 3.x
 
-      - name: Install Molecule Dependencies
-        run: pip3 install -r requirements.txt
+      - name: Install python Dependencies
+        run: pip install -r requirements.txt
 
       - name: Install ansible Dependencies
         run: ansible-galaxy role install -r roles/requirements.yml
 
       - name: Run Playbook
-        run: ansible-playbook -i hosts playbook.yml
+        run: >-
+          ansible-playbook -i hosts playbook.yml 
         env:
           PY_COLORS: 1
           ANSIBLE_FORCE_COLOR: 1
